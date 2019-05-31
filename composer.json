@@ -1,0 +1,21 @@
+{
+    "name": "dibuchis/weetraffic",
+    "description": "Manage traffic",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Regalado",
+            "email": "dibuchis@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "2.1",
+        "paragonie/easydb": "2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "WeeTraffic\\" : "app/"
+        }
+    }
+}

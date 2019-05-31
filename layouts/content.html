@@ -1,0 +1,50 @@
+{{ content }}
+
+<!-- Colored FAB button -->
+<div class="row app-bar">
+    <div class="col-md-4">
+        <button id="add-board" onclick="newDiagram()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+            <i class="material-icons">insert_drive_file</i>
+        </button>
+        <button id="add-board" onclick="saveDiagram()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+            <i class="material-icons">save</i>
+        </button>
+    </button>
+    <button id="add-board" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+        <i class="material-icons">print</i>
+    </button> 
+    |
+    <button id="add-board" onclick="addRow()"  class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+        <i class="material-icons">add</i>
+    </button>
+    </div>
+    <div class="col-md-4">
+        <div role="button" class="btn btn-primary" onclick="changeLayout('week')">Semana</div>
+        <div role="button" class="btn btn-warning" onclick="changeLayout('project')">Proyectos</div>
+    </div>
+    <div class="col-md-4 nav justify-content-end">
+            <div class="leyend">
+                    <div class="l-color new"></div>
+                    <div class="l-text">Nuevo</div>
+                </div>
+                <div class="leyend">
+                    <div class="l-color proccess"></div>
+                    <div class="l-text">En proceso</div>
+                </div>
+                <div class="leyend">
+                    <div class="l-color completed"></div>
+                    <div class="l-text">Completado</div>
+                </div>
+                <div class="leyend">
+                    <div class="l-color stoped"></div>
+                    <div class="l-text">Detenido</div>
+                </div>
+    </div>
+</div>
+
+<!-- Main Board -->  
+<div class="board-container board" id="myBoard">
+
+</div>
+
+<textarea id="templateBoard" >{{board_template}}</textarea>
