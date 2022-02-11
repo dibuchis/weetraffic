@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "twig/twig": "2.1",
+        "twig/twig": "2.14.11",
         "paragonie/easydb": "2.8"
     },
     "autoload": {
